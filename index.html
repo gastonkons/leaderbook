@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Compatibilidad -->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Titulo -->
+    <title>Leaderbook - Guarda, organiza y utiliza los enlaces</title>
+
+    <!--Descripción-->
+	<meta name="author" content="Leaderbook">
+	<meta name="description" content="Aplicacion utilizada para guardar, organizar y utilizar tus enlaces o links que coinsideres mas importantes">
+    <meta name="keywords" content="Bookmark, Marcador, Enlace, Organizar, Link, Mark, App">
+
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600|Roboto|Roboto+Slab:500&display=swap" rel="stylesheet">
+
+      <!-- Hojas de estilo -->
+      <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Ico -->
+    <link rel="icon" type="image/png" href="./img/ico.png">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbarContainer">
+            <div class="logo">
+                <a href="#"  class="logo__text">Leaderbook</a>
+            </div>
+            
+            <nav class="menu showMenu">
+                <div class="menu__links ">
+                    <a class="menu__link active" href="#">Home</a>
+                    <a class="menu__link menu__link_before" href="#">Planes</a>
+                    <a class="menu__link menu__link_before" href="#">Ayuda y Aprendizaje</a>
+                    <a class="menu__link menu__link_before" href="#">Acerca de Nosotros</a>
+                </div>
+                <div class="menu__login">
+                    <span>
+                        <a class="menu__link register" href="#">Registrarse</a> o <a class="menu__link login" href="#">Iniciar Sesion</a>
+                    </span>
+                </div>
+                <a href="javascript:void(0)" id="menu__hamburguer" class="icon-menu" onClick="showHide()"></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor de todo el sitio excepto navbar y footer -->
+    <div class="container">
+        <main class="hero">
+            <div class="hero__left">
+                <h1 class="hero__title">
+                    Guarda y comparte tus links de forma rápida y organizada.
+                </h1>
+                <div class="hero__buttonContent">
+                    <a href="#">
+                        <button class="hero__button">
+                            Comienza gratis
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="hero__imageContent">
+                    <img class="hero__image" src="./img/laptop.svg" alt="Laptop">
+            </div>
+        </main>
+        <div class="hr"><img src="img/divisor.png" alt=""></div>
+        <section class="features">
+            <div class="feature__item">
+                <h2 class="feature__item_title">Gestion</h2>
+                <div class="feature__item_imageContent">
+                    <img class="feature__item_image" src="./img/gestion.png" alt="Gestion">
+                </div>
+                <p class="feature__description">
+                    <span class="feature__description_bold">El tiempo es un tesoro.</span><br />
+                    Los links que queres guardar tenelos en un solo lugar!
+                </p>
+            </div>
+            <div class="feature__item">
+                <h2 class="feature__item_title">Orden</h2>
+                <div class="feature__item_imageContent">
+                    <img class="feature__item_image" src="./img/orden.png" alt="Orden">
+                </div>
+                <p class="feature__description">
+                    <span class="feature__description_bold">El orden es importante.</span><br />
+                    Tene tu espacio de links ordenados con #hastags o por temas para encontrarlos más rápido.
+                </p>
+            </div>
+            <div class="feature__item">
+                <h2 class="feature__item_title">Personalizacion</h2>
+                <div class="feature__item_imageContent">
+                    <img class="feature__item_image" src="./img/personalizacion.png" alt="Personalizacion">
+                </div>
+                <p class="feature__description">
+                    <span class="feature__description_bold">El gusto es propio.</span><br />
+                    Elige los colores, las formas y tamaños!
+                </p>
+            </div>
+        </section>
+        <section class="called">
+            <div class="called__backgroundContent">
+                <h3 class="called__phrase">
+                    Usala vayas donde vayas!
+                </h3>
+                <h4 class="called__description">
+                    En tu oficina, en tu casa o donde sea!
+                </h4>
+            </div>
+            <a href="#"><button class="called__button">Registrate Gratis</button></a>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__titleContent">
+                <div class="footer__title">Leaderbook</div>
+                <div class="footer__socialMedia">
+                    <a href="#"><span class="footer__social_item icon-facebook" onClick="messageLinks('Facebook')"></span></a>
+                    <a href="#"><span class="footer__social_item icon-instagram" onClick="messageLinks('Instagram')"></span></a>
+                    <a href="#"><span class="footer__social_item icon-linkedin2" onClick="messageLinks('Linkedin')"></span></a>
+                    <a href="#"><span class="footer__social_item icon-github"></span></a>
+                    <a href="#"><span class="footer__social_item icon-youtube" onClick="messageLinks('Youtube')"></span></a>
+                </div>
+            </div>
+            <div class="footer__sitemap">
+                <div class="footer__sitemap_links">
+                    <a href="#" class="footer__sitemap_link">Home</a>
+                    <a href="#" class="footer__sitemap_link">Planes</a>
+                    <a href="#" class="footer__sitemap_link">Ayuda y Aprendizaje</a>
+                    <a href="#" class="footer__sitemap_link">Acerca de Nosotros</a>
+                </div>
+                <div class="footer__sitemap_functions">
+                    <div class="footer__sitemap_language">
+                        <form action="" class="footer__sitemap_language_form"><label for="language">Elige el idioma: 
+                            <select name="language" id="language">
+                                <option value="spanish">Español</option>
+                                <option value="spanish">English</option>
+                            </select>
+                        </label></form>
+                    </div>
+                    <div class="footer__sitemap_mode">
+                        <form action="" class="footer__sitemap_mode_form"><label for="mode">Modo: 
+                            <select name="mode" id="mode">
+                                <option value="spanish">Light</option>
+                                <option value="spanish">Dark</option>
+                            </select>
+                        </label></form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__allrightreserved">
+                Make with <span class="icon-heart footer__heart"></span> by <span class="footer__gastonkons">gastonkons</span><br>
+                @ Leaderbook. Todos los derechos reservados.<br>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
