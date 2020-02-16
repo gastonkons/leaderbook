@@ -203,7 +203,7 @@ html, body {
     }
 
     .navbar .menu .icon-menu,
-    .navbar .menu .icon-home3 {
+    .navbar .menu .icon-cross {
         display:block;
         padding:15px;
         font-size:3rem;
@@ -251,15 +251,16 @@ html, body {
 
     .menu.showMenu .menu__login .register,
     .menu.showMenu .menu__login .login {
-        display:block;
-        padding: 0px;
-        font-size:1.2em;
+        display:inline-block;
+        padding: 2px 5px 0 5px;
+        
+        font-size:2rem;
         text-transform: uppercase;
     }
 
     .menu.showMenu .menu__login .login {
         display:block;
-        
+        font-weight: 600;
     }
 
     .menu.showMenu .menu__login .login::before {
@@ -268,9 +269,9 @@ html, body {
 
     .menu.showMenu .menu__links .menu__link {
         display:block;
-        font-size: 1.9rem;
+        font-size: 3rem;
         font-weight: 600;
-        padding:5px 0;
+        padding:15px 0;
         text-transform: uppercase;
     }
 

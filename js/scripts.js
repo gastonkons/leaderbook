@@ -9,9 +9,9 @@ function showHide(){
     menu.classList.forEach(item => {
         if (item === 'showMenu') {
             button.classList.remove('icon-menu');
-            button.classList.add('icon-home3');
+            button.classList.add('icon-cross');
         } else {
-            button.classList.remove('icon-home3');
+            button.classList.remove('icon-cross');
             button.classList.add('icon-menu');
         }
     })
