@@ -229,7 +229,7 @@ html, body {
         height:100vh;
         flex-direction: column;
         justify-content: center;
-        background-color: rgba(237,237,237,.9);
+        background-color: rgba(237,237,237,1);
         position: absolute;
         top:0;
         right:0;
