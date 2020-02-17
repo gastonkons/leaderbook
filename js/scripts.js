@@ -1,5 +1,5 @@
 function messageLinks(text){
-    alert(`A ${text} aún no hemos creado!`);
+    alert(`A ${text} aún no lo hemos creado!`);
 }
 
 function showHide(){
