@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <!-- Compatibilidad -->
@@ -20,6 +20,7 @@
 
       <!-- Hojas de estilo -->
       <link rel="stylesheet" href="./css/main.css">
+      <link rel="stylesheet" href="./css/login.css">
 
     <!-- Ico -->
     <link rel="icon" type="image/png" href="./img/ico.png">
@@ -34,17 +35,12 @@
             
             <nav class="menu">
                 <div class="menu__links ">
-                    <a class="menu__link active" href="/">Home</a>
+                    <a class="menu__link menu__link_before" href="/">Home</a>
                     <a class="menu__link menu__link_before" href="#">Planes</a>
                     <a class="menu__link menu__link_before" href="#">Ayuda y Aprendizaje</a>
                     <a class="menu__link menu__link_before" href="#">Acerca de Nosotros</a>
                 </div>
-                <div class="menu__login">
-                    <span>
-                        <a class="menu__link register" href="#">Registrarse</a>
-                        <a class="menu__link login" href="/login.html">Iniciar Sesion</a>
-                    </span>
-                </div>
+                
                 <a href="javascript:void(0)" id="menu__hamburguer" class="icon-menu" onClick="showHide()"></a>
             </nav>
         </div>
@@ -52,70 +48,18 @@
 
     <!-- Contenedor de todo el sitio excepto navbar y footer -->
     <div class="container">
-        <!-- Hero -->
-        <main class="hero">
-            <div class="hero__left">
-                <h1 class="hero__title">
-                    Guarda y comparte tus links de forma rápida y organizada.
-                </h1>
-                <div class="hero__buttonContent">
-                    <a href="/register.html">
-                        <button class="hero__button">
-                            Comienza gratis
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="hero__imageContent">
-                    <img class="hero__image" src="./img/laptop.svg" alt="Laptop">
-            </div>
+        <main class="login">
+            <img class="login__image" src="./img/laptop.svg" alt="Registrate">
+            <h1 class="login__title">Iniciar Sesion</h1>
+            
+            <form class="login__form"  action="#">
+                <input class="login__input" type="text" name="userUsername" placeholder="Nombre de Usuario">
+                <input class="login__input"  type="password" name="userPassword" placeholder="Contraseña">
+                <input class="login__input"  type="submit" value="Iniciar Sesion">
+            </form>
+            <a href="/register.html" class="login__register login__lostPassword">Olvidé mi contraseña</a>
+            <a href="/register.html" class="login__register">Registrarse</a>
         </main>
-        <div class="hr"><img src="img/divisor.png" alt=""></div>
-        <!-- Caracteristicas -->
-        <section class="features">
-            <div class="feature__item">
-                <h2 class="feature__item_title">Gestion</h2>
-                <div class="feature__item_imageContent">
-                    <img class="feature__item_image" src="./img/gestion.png" alt="Gestion">
-                </div>
-                <p class="feature__description">
-                    <span class="feature__description_bold">El tiempo es un tesoro.</span><br />
-                    Los links que queres guardar tenelos en un solo lugar!
-                </p>
-            </div>
-            <div class="feature__item">
-                <h2 class="feature__item_title">Orden</h2>
-                <div class="feature__item_imageContent">
-                    <img class="feature__item_image" src="./img/orden.png" alt="Orden">
-                </div>
-                <p class="feature__description">
-                    <span class="feature__description_bold">El orden es importante.</span><br />
-                    Tene tu espacio de links ordenados con #hashtags o por temas para encontrarlos más rápido.
-                </p>
-            </div>
-            <div class="feature__item">
-                <h2 class="feature__item_title">Personalizacion</h2>
-                <div class="feature__item_imageContent">
-                    <img class="feature__item_image" src="./img/personalizacion.png" alt="Personalizacion">
-                </div>
-                <p class="feature__description">
-                    <span class="feature__description_bold">El gusto es propio.</span><br />
-                    Elegí los colores, formas y tamaños!
-                </p>
-            </div>
-        </section>
-        <!-- Banner del llamado -->
-        <section class="called">
-            <div class="called__backgroundContent">
-                <h3 class="called__phrase">
-                    Usala vayas donde vayas!
-                </h3>
-                <h4 class="called__description">
-                    En tu oficina, en tu casa o donde sea!
-                </h4>
-            </div>
-            <a href="/register.html"><button class="called__button">Registrate Gratis</button></a>
-        </section>
     </div>
     
     <!-- Footer -->
