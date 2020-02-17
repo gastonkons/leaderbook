@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600|Roboto|Roboto+Slab:500&display=swap" rel="stylesheet">
 
       <!-- Hojas de estilo -->
+      <link rel="stylesheet" href="./css/animate.css">
       <link rel="stylesheet" href="./css/main.css">
       <link rel="stylesheet" href="./css/login.css">
 
@@ -27,9 +28,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header class="navbar">
+    <header class="navbar animated fadeInDownBig">
         <div class="navbarContainer">
-            <div class="logo">
+            <div class="logo animated fadeInLeft delay-1s">
                 <a href="./index.html"  class="logo__text">Leaderbook</a>
             </div>
             
@@ -40,7 +41,11 @@
                     <a class="menu__link menu__link_before" href="#">Ayuda y Aprendizaje</a>
                     <a class="menu__link menu__link_before" href="#">Acerca de Nosotros</a>
                 </div>
-                
+                <div class="menu__login">
+                    <span>
+                        <a class="menu__link login" href="./login.html">Iniciar Sesion</a>
+                    </span>
+                </div>
                 <a href="javascript:void(0)" id="menu__hamburguer" class="icon-menu" onClick="showHide()"></a>
             </nav>
         </div>
@@ -48,7 +53,7 @@
 
     <!-- Contenedor de todo el sitio excepto navbar y footer -->
     <div class="container">
-        <main class="register">
+        <main class="register animated fadeInLeftBig">
             <img class="register__image" src="./img/laptop.svg" alt="Registrate">
             <h1 class="register__title">Registrate</h1>
             
@@ -67,7 +72,7 @@
     </div>
     
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer animated fadeInUpBig delay-3s">
         <div class="footer__content">
             <div class="footer__titleContent">
                 <div class="footer__title">Leaderbook</div>

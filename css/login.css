@@ -1,9 +1,10 @@
 body {
     background-image: url(../img/textura2.jpg);
     background-size: 200px;
+    background-color: #ededed;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:769px) {
     body {
         background-size:100px;
     }

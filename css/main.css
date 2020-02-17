@@ -12,6 +12,7 @@
 html {
     font-family: 'Roboto Slab', serif;
     font-size:10px;
+    scroll-behavior: smooth;
 }
 
 /* Colors and Shadows */
@@ -27,6 +28,8 @@ html {
     --white-color: #fff;
     --black-color: #000;
     --light-gray-v2-color: #9d9d9c;
+    --yellow-color: #ffd469;
+    --yellow-dark-color: #d1aa45;
     /* Shadows */
     --shadow-light-gray: 0 0 5px rgba(0,0,0, .2);
     --shadow-dark-gray: 2px 5px 7px rgba(0,0,0, .4);
@@ -38,6 +41,7 @@ html {
 html, body {
     background-color: var(--light-gray-color);
 }
+
 
 
 
@@ -192,7 +196,7 @@ html, body {
 }
 
 /* Media queries de Nav */
-@media screen and (max-width:600px) {
+@media screen and (max-width:769px) {
     html, body {
         font-size:.5em;
     }
@@ -288,11 +292,10 @@ html, body {
 
 .container .hero {
     width:100%;
-    height:63vh;
     display:grid;
-    grid-gap:1px;
+    grid-gap:0px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(63vh, 1fr);
+    grid-template-rows: 1fr;
     background-size:cover;
     background-image: url(../img/banner.png);
     border-bottom-left-radius: 20px;
@@ -301,7 +304,6 @@ html, body {
 }
 
 .container .hero .hero__left {
-    width:100%;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr .5fr;
@@ -320,7 +322,7 @@ html, body {
 }
 
 .hero .hero__buttonContent {
-    align-self: flex-start;
+    align-self: start;
 }
 
 .hero .hero__left .hero__button {
@@ -329,8 +331,8 @@ html, body {
     outline: none;
     font-family: 'Poppins', sans-serif;
     text-transform:uppercase;
-    color: var(--blue-color);
-    background-color: var(--light-gray-color);
+    background: var(--yellow-color);
+    color:var(--black-color);
     border: none;
     box-shadow: var(--shadow-dark-gray);
     border-radius: 20px;
@@ -345,8 +347,8 @@ html, body {
     outline: none;
     font-family: 'Poppins', sans-serif;
     text-transform:uppercase;
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    background: var(--yellow-color);
+    color:var(--black-color);
     border: none;
     box-shadow: var(--shadow-dark-gray);
     border-radius: 20px;
@@ -358,16 +360,21 @@ html, body {
 
 .hero .hero__left .hero__button:hover,
 .called__button:hover {
-    background: var(--dark-blue-color);
+    background: var(--white-color);
+    color:var(--blue-color);
 }
 
 .hero .hero__imageContent {
-    display:flex;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width:100%;
+    margin:80px 0;
 }
 
 .hero .hero__imageContent .hero__image {
-    width:290px;
+    width:350px;
+    padding:30px;
 }
 
 .container .hr {
@@ -378,7 +385,7 @@ html, body {
 
 .container .features {
     display:grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     text-align:center;
     grid-gap:40px;
     justify-content: center;
@@ -387,7 +394,7 @@ html, body {
 
 /* Mediaqueries del Hero */
 
-@media screen and (max-width:600px){
+@media screen and (max-width:769px){
     .container .hero {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -413,11 +420,11 @@ html, body {
 
     .container .hero .hero__imageContent {
         grid-row: 1 / 2;
-        margin:30px 0;
+        margin:30px 0 0 0;
     }
 
     .container .hero .hero__image {
-        width: 160px;
+        width: 200px;
     }
 
     .container .hr {
@@ -509,8 +516,11 @@ html, body {
 }
 
 .called .called__backgroundContent {
-    background: url(../img/banner2.png);
-    background-size: cover;
+    background: url(../img/textura.jpg);
+    background-size: 200px;
+    background-color:var(--white-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .called .called__phrase {
@@ -530,15 +540,16 @@ html, body {
 }
 
 .called .called__button {
-    margin: 50px 0 0 0;
+    margin: 50px 0 10px 0;
 }
 
 /* Mediaqueries de Called */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:769px) {
+
     .called .called__backgroundContent {
         height:auto;
-        background-size:auto;
+        background-size:120px;
     }
 
     .called .called__phrase {
@@ -704,7 +715,7 @@ html, body {
 
 /* Mediaqueries de Footer */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:769px) {
     .footer .footer__content {
         margin: 0;
         z-index:1;
@@ -845,7 +856,7 @@ html, body {
     color: var(--medium-gray-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
     .container .register,
     .container .login {
         width:100%;
