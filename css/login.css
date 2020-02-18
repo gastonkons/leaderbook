@@ -9,3 +9,7 @@ body {
         background-size:100px;
     }
 }
+
+body.dark {
+    background-image: url(../img/textura4.jpg);
+}

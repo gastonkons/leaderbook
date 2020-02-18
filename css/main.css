@@ -791,7 +791,8 @@ html, body {
     margin: 0px auto 100px auto;
     background-color: var(--light-gray-color);
     width: 700px;
-    border-radius:50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
     box-shadow: var(--shadow-lighter-gray);
     text-align:center;
     padding:10px 0 20px 0;
@@ -810,7 +811,6 @@ html, body {
     margin-top:20px;
     font-size:3.5rem;
     font-weight: 400;
-    color: var(--blue-color);
     color: var(--dark-gray-v2-color)
 
 }
@@ -840,8 +840,8 @@ html, body {
 
 .container .register__input:last-of-type,
 .container .login__input:last-of-type {
-    background: #ffd469;
-    color: #000;
+    background: var(--yellow-color);
+    color: var(--black-color);
     width:35%;
     margin-bottom:20px;
 }
@@ -963,4 +963,66 @@ html, body {
     .navbar .menu .menu__link {
         padding: 10px 10px;
     }
+}
+
+/* Dark mode */
+
+body.dark,
+body.dark .container .register,
+body.dark .container .login,
+body.dark .container .about  {
+    background-color: var(--dark-gray-v2-color);
+    color: var(--white-color);
+}
+
+body.dark .navbar,
+body.dark .footer {
+    background-color: var(--dark-gray-v2-color);
+}
+
+body.dark .navbar .logo__text,
+body.dark .navbar .logo__text:visited,
+body.dark .navbar .menu .menu__link,
+body.dark .navbar .menu,
+body.dark .features .feature__item .feature__item_title,
+body.dark .footer__social_item, 
+body.dark .footer__title,
+body.dark .footer__sitemap_functions,
+body.dark .called__description,
+body.dark .container .register__login,
+body.dark .container .login__register,
+body.dark .about .about__paragraph {
+color: var(--light-gray-color);
+}
+
+body.dark .called .called__backgroundContent {
+    background-image: url(../img/textura3.jpg);
+}
+
+body.dark .called__phrase,
+body.dark .container .register__title,
+body.dark .container .login__title {
+    color: var(--white-color);
+}
+
+body.dark .container .login__lostPassword {
+    background: var(--medium-gray-color);
+    color:var(--light-gray-v2-color);
+}
+
+body.dark .about__item:nth-child(2n) {
+    background: var(--dark-gray-color);
+}
+
+body.dark .about .about__subtitle  {
+    color: var(--yellow-color)
+}
+
+body.dark .about .about__callback {
+    color: var(--light-gray-color);
+}
+
+body.dark .navbar .menu .register,
+body.dark .navbar .menu .login {
+    color:var(--blue-color);
 }
