@@ -184,7 +184,8 @@ html, body {
     border-color: var(--dark-blue-color);
 }
 
-.navbar .menu .icon-menu {
+.navbar .menu .icon-menu,
+.navbar .menu .icon-cross {
     display:none;
 }
 
@@ -1025,4 +1026,15 @@ body.dark .about .about__callback {
 body.dark .navbar .menu .register,
 body.dark .navbar .menu .login {
     color:var(--blue-color);
+}
+
+@media screen and (max-width: 769px) {
+    body.dark .navbar .menu .icon-menu,
+    body.dark .navbar .menu .icon-cross {
+        color:var(--light-gray-v2-color);
+    }
+
+    body.dark .menu.showMenu {
+        background-color: var(--dark-gray-v2-color);
+    }
 }
