@@ -43,6 +43,7 @@
                 </div>
                 <div class="menu__login">
                     <span>
+                        <a class="menu__link register" href="./register.html">Registrarse</a>
                         <a class="menu__link login" href="./login.html">Iniciar Sesion</a>
                     </span>
                 </div>
@@ -53,21 +54,34 @@
 
     <!-- Contenedor de todo el sitio excepto navbar y footer -->
     <div class="container">
-        <main class="register animated fadeInLeftBig">
-            <img class="register__image" src="./img/laptop.svg" alt="Registrate">
-            <h1 class="register__title">Registrate</h1>
-            
-            <form class="register__form"  action="#">
-                <input class="register__input" type="text" name="userUsername" placeholder="Nombre de Usuario">
-                <input class="register__input"  type="text" name="userName" placeholder="Nombre">
-                <input class="register__input"  type="text" name="userLastname" placeholder="Apellido">
-                <input class="register__input"  type="email" name="userEmail" placeholder="Ejemplo@ejemplo.com">
-                <input class="register__input"  type="password" name="userPassword" placeholder="Contraseña">
-                <input class="register__input"  type="password" name="userConfirmPassword" placeholder="Repetir contraseña">
-                <input class="register__input"  type="submit" value="Crear Cuenta">
-            </form>
-            <a href="./login.html" class="register__login">Iniciar Sesion</a>
-
+        <main class="about animated fadeInUpBig">
+            <div class="about__image"></div>
+            <div class="about__content">
+                <h1 class="about__title">Acerca de Leaderbook</h1>
+                <div class="about__item animated fadeInLeftBig delay-1s">
+                    <h2 class="about__subtitle">¿Quienes somos?</h2>
+                    <p class="about__paragraph">
+                        Somos un equipo de tecnología (Argentina) en busqueda de la organización y orden en el ambito digital. Creemos en la innovación, en las herramientas IT que nos permiten disponer de nuestro tiempo, para cosas más provechosas.
+                    </p>
+                </div>
+                <div class="about__item animated fadeInRightBig delay-1s">
+                    <h2 class="about__subtitle">¿Qué es Leaderbook?</h2>
+                    <p class="about__paragraph">
+                        Leaderbook es una aplicación diseñada para la organización de esos enlaces que nunca sabes donde guardar, o no tenes un lugar especial para guardarlos de forma ordenada.
+                    </p>
+                    <p class="about__paragraph">
+                        A demás de poder compartir con tus colegas o seguidores tus enlaces favoritos y poder compartir con el mundo los mejores links que hay en internet. <b>¿No es lo mejor?</b> 
+                    </p>
+                </div>
+                <div class="about__item animated fadeInLeftBig delay-2s">
+                    <h2 class="about__subtitle">¿Y por qué usar Leaderbook?</h2>
+                    <p class="about__paragraph">
+                        Leaderbook quiere darte un lugar para guardar y descubrir los mejores enlaces que tienen y comparten las personas para utilizar o tener información valiosa.
+                    </p>
+                </div>
+                <h2 class="about__subtitle about__callback  animated fadeInUpBig delay-3s">¿Qué estás esperando?</h2>
+                <a href="./register.html" class="about__buttonContent"><button type="button" class="about__button  animated fadeInUpBig delay-3s">Registrarte es gratis</button></a>
+            </div>
         </main>
     </div>
     
@@ -80,7 +94,7 @@
                     <a href="javascript:void(0)" onClick="messageLinks('Facebook')"><span class="footer__social_item icon-facebook"></span></a>
                     <a href="javascript:void(0)" onClick="messageLinks('Instagram')"><span class="footer__social_item icon-instagram"></span></a>
                     <a href="javascript:void(0)" onClick="messageLinks('LinkedIn')"><span class="footer__social_item icon-linkedin2"></span></a>
-                    <a href="#"><span class="footer__social_item icon-github"></span></a>
+                    <a href="javascript:void(0)" onClick="messageLinks('Github')"><span class="footer__social_item icon-github"></span></a>
                     <a href="javascript:void(0)" onClick="messageLinks('Youtube')"><span class="footer__social_item icon-youtube"></span></a>
                 </div>
             </div>
