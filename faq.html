@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Titulo -->
-    <title>Iniciar Sesion - Leaderbook - Guarda, organiza y utiliza los enlaces</title>
+    <title>Ayuda y Aprendizaje - Leaderbook - Guarda, organiza y utiliza los enlaces</title>
 
     <!--Descripción-->
 	<meta name="author" content="Leaderbook">
@@ -38,12 +38,13 @@
                 <div class="menu__links ">
                     <a class="menu__link menu__link_before" href="./index.html">Home</a>
                     <a class="menu__link menu__link_before" href="javascript:void(0)" onClick="messageLinks('Planes')">Planes</a>
-                    <a class="menu__link menu__link_before" href="./faq.html">Ayuda y Aprendizaje</a>
-                    <a class="menu__link menu__link_before" href="./about.html" >Acerca de Nosotros</a>
+                    <a class="menu__link menu__link_before active" href="./faq.html">Ayuda y Aprendizaje</a>
+                    <a class="menu__link menu__link_before" href="./about.html">Acerca de Nosotros</a>
                 </div>
                 <div class="menu__login">
                     <span>
-                        <a class="menu__link login" href="./register.html">Registrarse</a>
+                        <a class="menu__link register" href="./register.html">Registrarse</a>
+                        <a class="menu__link login" href="./login.html">Iniciar Sesion</a>
                     </span>
                 </div>
                 <a href="javascript:void(0)" id="menu__hamburguer" class="icon-menu" onClick="showHide()"></a>
@@ -53,17 +54,43 @@
 
     <!-- Contenedor de todo el sitio excepto navbar y footer -->
     <div class="container">
-        <main class="login animated fadeInLeftBig">
-            <img class="login__image" src="./img/laptop.svg" alt="Registrate">
-            <h1 class="login__title">Iniciar Sesion</h1>
+        <main class="faq animated fadeInUpBig">
+            <div class="faq__image"></div>
+            <div class="faq__searchContent">
+                <input class="faq__searchBar" type="search" placeholder="Buscar en Ayuda y Aprendizaje">
+                <button type="submit" class="faq__searchButton">Buscar</button>
+            </div>
+            <h1 class="faq__title">¿Como podemos ayudarte?</h1>
             
-            <form class="login__form"  action="#">
-                <input class="login__input" type="text" name="userUsername" placeholder="Nombre de Usuario">
-                <input class="login__input"  type="password" name="userPassword" placeholder="Contraseña">
-                <input class="login__input"  type="submit" value="Iniciar Sesion">
-            </form>
-            <a href="javascript:void(0)" onClick="messageLinks('Recoveryg')" class="login__register login__lostPassword">Olvidé mi contraseña</a>
-            <a href="./register.html" class="login__register">Registrarse</a>
+                <div class="faq__sendEmailContent">
+                    <a class="faq__link" href="mailto:gastonkons@gmail.com?Subject=Consulta%20-%20info" target="_blank">
+                        <h3 class="faq__sendEmail_title">Envianos un correo electrónico</h3>
+                        <h4 class="faq__sendEmail_subtitle">En cualquier momento</h4>
+                    </a>
+                </div>
+            
+            <section class="faq__articles">
+                <article class="faq__article">
+                    <a class="faq__article_link" href="javascript:void(0)" onClick="messageLinks('Article')">
+                    <h2 class="faq__article_title">Guia básica para utilizarla</h2>   
+                    </a>
+            </article>
+                <article class="faq__article">
+                    <a class="faq__article_link" href="javascript:void(0)" onClick="messageLinks('Article')">
+                    <h2 class="faq__article_title">Elementos básicos</h2>   
+                    </a>
+            </article>
+                <article class="faq__article">
+                    <a class="faq__article_link" href="javascript:void(0)" onClick="messageLinks('Article')">
+                    <h2 class="faq__article_title">Formas de organizar los links mas utilizadas</h2>   
+                    </a>
+            </article>
+                <article class="faq__article">
+                    <a class="faq__article_link" href="javascript:void(0)" onClick="messageLinks('Article')">
+                    <h2 class="faq__article_title">Comentarios de las personas que la usaron</h2>   
+                    </a>
+            </article>
+            </section>
         </main>
     </div>
     

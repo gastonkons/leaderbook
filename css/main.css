@@ -966,12 +966,139 @@ html, body {
     }
 }
 
+/* Faq */
+
+.container .faq {
+    width:100%;
+    background-color: var(--light-gray-color);
+    color: var(--dark-gray-color);
+    text-align:center;
+}
+
+.faq .faq__image {
+    background-image: url(../img/image2.jpg);
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    height: 300px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.faq .faq__searchContent {
+    margin: 10px 0;
+    width:100%;
+    padding:20px;
+    background-image: url(../img/textura3.jpg);
+    background-size:200px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.faq .faq__searchBar {
+    width:50%;
+    padding:10px 20px;;
+    font-size: 1.9rem;
+    border:0;
+    border-radius:20px;
+    outline: none;
+    box-shadow: var(--shadow-lighter-gray);
+}
+
+.faq .faq__searchButton {
+    margin: 0 0 0 10px;
+    border-radius:20px;
+    padding:10px;
+    cursor: pointer;
+    font-size:1.9rem;
+    background: var(--yellow-color);
+    border: 0;
+    outline: 0;
+    box-shadow: var(--shadow-lighter-gray);
+}
+
+.faq .faq__title {
+    font-size:5rem;
+    margin:40px 0;
+}
+
+.faq .faq__link {
+    width: 100%;
+}
+
+.faq .faq__sendEmailContent {
+    border-radius: 20px;
+    background-color: var(--white-color);
+    padding: 20px 30px;
+    width: fit-content;
+    margin: 0 auto;
+    font-size:2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: var(--blue-color);
+    line-height: 2.5rem;
+    box-shadow: var(--shadow-light-gray);
+
+}
+
+.faq .faq__sendEmail_title {
+    color: var(--blue-color);
+}
+
+.faq .faq__sendEmail_subtitle {
+    font-size:1.4rem;
+    color: #6f91ff;
+}
+
+.faq .faq__articles {
+    display:grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap:60px 20px ;
+    padding:40px;
+    margin:20px 0 0 0;
+    text-align:left;
+    grid-auto-columns: auto;
+}
+
+.faq .faq__article {
+    font-size:2rem;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/textura3.jpg);
+    padding:30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.faq .faq__article_title {
+    line-height: 3.5rem;
+    margin-bottom:20px;
+}
+
+.faq .faq__article_link,
+.faq .faq__article_link:visited {
+    text-decoration: none;
+    color:var(--white-color);
+}
+
+.faq .faq__article:hover {
+    opacity:.8;
+}
+
+/* Mediaqueries de FAQ */
+
+@media screen and (max-width:769px) {
+    .faq .faq__articles {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Dark mode */
 
 body.dark,
 body.dark .container .register,
 body.dark .container .login,
-body.dark .container .about  {
+body.dark .container .about {
     background-color: var(--dark-gray-v2-color);
     color: var(--white-color);
 }
@@ -979,6 +1106,15 @@ body.dark .container .about  {
 body.dark .navbar,
 body.dark .footer {
     background-color: var(--dark-gray-v2-color);
+}
+
+body.dark .container .faq {
+    background-color: var(--dark-gray-color);
+    color: var(--white-color);
+}
+
+body.dark .faq .faq__sendEmail_subtitle {
+    color: var(--yellow-dark-color);
 }
 
 body.dark .navbar .logo__text,
@@ -1015,7 +1151,9 @@ body.dark .about__item:nth-child(2n) {
     background: var(--dark-gray-color);
 }
 
-body.dark .about .about__subtitle  {
+body.dark .about .about__subtitle,
+body.dark .faq .faq__sendEmail_title
+  {
     color: var(--yellow-color)
 }
 
@@ -1028,6 +1166,35 @@ body.dark .navbar .menu .login {
     color:var(--blue-color);
 }
 
+body.dark .faq .faq__sendEmailContent {
+    background-color:var(--dark-gray-v2-color);
+}
+
+body.dark .navbar .menu__login .login,
+body.dark .navbar .menu__login .register {
+    color: var(--yellow-color);
+}
+
+body.dark .navbar .menu__login .login::before {
+    border-color: var(--yellow-color);
+}
+
+body.dark .navbar .menu .menu__link:hover::before {
+    background-color:var(--yellow-dark-color);
+}
+
+body.dark .navbar .menu .menu__link.active::before {
+    background-color:var(--yellow-color)
+}
+
+body.dark .footer .footer__content .footer__socialMedia .footer__social_item:hover {
+    color: var(--yellow-color);
+}
+
+body.dark .footer .footer__content .footer__sitemap_link:hover {
+    color:var(--white-color)
+}
+
 @media screen and (max-width: 769px) {
     body.dark .navbar .menu .icon-menu,
     body.dark .navbar .menu .icon-cross {
@@ -1037,4 +1204,7 @@ body.dark .navbar .menu .login {
     body.dark .menu.showMenu {
         background-color: var(--dark-gray-v2-color);
     }
+
+    
+    
 }
